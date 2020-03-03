@@ -5,12 +5,3 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
-
-user_names = %w(shashike balthazar irwin)
-interests = %w(swimming dancing crying laughing)
-
-user_names.each do |n|
-  user = User.create(name: n, password: n, password_confirmation: n)
-  user.interests.create(body: interests.sample)
-end
